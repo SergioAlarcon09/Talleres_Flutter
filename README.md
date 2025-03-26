@@ -1,30 +1,31 @@
-# hola_mundo
+# Taller: Navegación, Widgets y Ciclo de Vida
 
-Hola Mundo y plantilla base para una aplicacion en Flutter.
+Aplicación Flutter que demuestra:
+- Navegación con parámetros usando `go_router`
+- Implementación de widgets personalizados
+- Ciclo de vida de un `StatefulWidget`
 
-## Empecemos
-Este proyecto es el punto de partida para una aplicación Flutter
+## Funcionalidades
+- Go router
+- Paso de parámetros
 
+## Widgets utilizados
+- Contador
+- Progress_circle
+- GridView
+- TabBar
 
-## Requisitos Previos
-
-Antes de comenzar, asegúrate de tener instalado lo siguiente:
-
-- **Flutter SDK**: Asegúrate de tener Flutter instalado en tu máquina. Puedes descargarlo desde [aquí](https://flutter.dev/docs/get-started/install).
-- **Dart SDK**: Viene incluido con Flutter, pero asegúrate de que esté actualizado.
-- **Android Studio** o **Xcode**: Dependiendo de la plataforma en la que desees compilar la aplicación.
-- **Git**: Para clonar el repositorio.
+## StatefulWidget
+Se implementaron los métodos initState(), didChangeDependencies() y dispose() en "nueva_vista.dart"
+(Los otros dos métodos build() y setState() también están en el proyecto 
 
 ## Clonar el Repositorio
-- navega hasta la ruta del proyecto.
-ejecuta:
+- git clone https://github.com/SergioAlarcon09/Talleres_Flutter/tree/Taller_Ciclo_De_Vida.git
+
+## Instalar dependencias
 - flutter pub get
-- Compilar App.
 
-## Otros recursos
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Ejecutar en Chrome
+- flutter run -d chrome
 
-
-Para obtener ayuda para comenzar con el desarrollo de Flutter, consulte la
-[documentacíon Online](https://docs.flutter.dev/), que ofrece tutoriales, ejemplos, orientación sobre desarrollo móvil y una referencia completa de API.
+SERGIO IVÁN ALARCÓN PEÑA - 230221028 UCEVA
