@@ -65,6 +65,28 @@ class CustomDrawer extends StatelessWidget {
               Navigator.pop(context); // Cierra el drawer
             },
           ),
+          //! Lista de estudiantes - FUTURE
+          ListTile(
+            leading: const Icon(Icons.list),
+            title: const Text('Lista de estudiantes (Future)'),
+            onTap: () => context.goNamed('future'),
+          ),
+          //! Temporizador - TIMER
+          ListTile(
+            leading: const Icon(Icons.timer),
+            title: const Text('Temporizador (Timer)'),
+            onTap: () {
+              context.goNamed('timerView');
+            },
+          ),
+          //! Tarea pesada - ISOLATE
+          ListTile(
+            leading: const Icon(Icons.memory),
+            title: const Text('Tarea pesada (Isolate)'),
+            onTap: () {
+              context.goNamed('isolate');
+            },
+          ),
         ],
       ),
     );

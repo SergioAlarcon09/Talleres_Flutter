@@ -1,9 +1,12 @@
 import 'package:go_router/go_router.dart';
 import 'package:hola_mundo/form_view.dart';
 import 'package:hola_mundo/nueva_vista.dart';
+import 'package:hola_mundo/views/future%20(lista%20estudiantes)/future_view.dart';
 import 'package:hola_mundo/views/home_view.dart';
+import 'package:hola_mundo/views/isolate%20(tarea%20pesada)/isolate_view.dart';
 import 'package:hola_mundo/views/profile_view.dart';
 import 'package:hola_mundo/views/settings_view.dart';
+import 'package:hola_mundo/views/timer%20(temporizadores)/timer_view.dart';
 
 final GoRouter appRouter = GoRouter(   //* CLASE EN DONDE VAN DEFINIDAS LAS RUTAS DE LA APP
   routes: [
@@ -29,6 +32,24 @@ final GoRouter appRouter = GoRouter(   //* CLASE EN DONDE VAN DEFINIDAS LAS RUTA
         final texto = state.pathParameters['texto'] ?? '';
         return NuevaVista(textoRecibido: texto);
       }
+    ),
+    //!Ruta para la pagina FLista de estudiantes
+    GoRoute(
+      path: '/future',
+      name: 'future',
+      builder: (context, state) => const FutureView(),
+    ),
+    //!Ruta para la pagina Temporizadores
+    GoRoute(
+      path: '/timer',
+      name: 'timerView',
+      builder: (context, state) => const TimerView(),
+    ),
+    //!Ruta para la pagina Tarea pesada
+    GoRoute(
+      path: '/isolate',
+      name: 'isolate',
+      builder: (context, state) => const IsolateView(),
     ),
   ],
 );

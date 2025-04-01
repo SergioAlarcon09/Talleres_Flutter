@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hola_mundo/routes/app_router.dart';
 
-import 'themes/app_theme.dart'; // Importa el tema
+import 'themes/app_theme.dart';
 
 void main() {
   runApp(const MyApp());

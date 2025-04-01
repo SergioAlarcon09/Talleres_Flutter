@@ -11,7 +11,7 @@ class BaseView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(title)),
-      drawer: const CustomDrawer(), //* Es como el ícono que despliega el menú
+      drawer: const CustomDrawer(), //* ícono que despliega el menú
       body: body,
     );
   }
