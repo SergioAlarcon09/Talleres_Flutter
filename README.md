@@ -1,26 +1,31 @@
-# Taller: Navegación, Widgets y Ciclo de Vida
+# Taller: Future, Timer e Isolate
 
 Aplicación Flutter que demuestra:
-- Navegación con parámetros usando `go_router`
-- Implementación de widgets personalizados
-- Ciclo de vida de un `StatefulWidget`
+Implementación de operaciones asincrónicas en Flutter
 
 ## Funcionalidades
-- Go router
-- Paso de parámetros
+- Carga de datos con Future (simulación de API)
+- Contador con Timer (inicio, pausa y reinicio)
+- Procesamiento en segundo plano con Isolate (tarea pesada sin bloquear la UI)
 
 ## Widgets utilizados
-- Contador
-- Progress_circle
-- GridView
-- TabBar
+### Lista de estudiantes:
+- FutureBuilder
+- CircularProgressIndicator
+- ListView.builder
 
-## StatefulWidget
-Se implementaron los métodos initState(), didChangeDependencies() y dispose() en "nueva_vista.dart"
-(Los otros dos métodos build() y setState() también están en el proyecto 
+### Contador con Timer
+- Timer.periodic
+- ElevatedButton
+- Text
+
+### Tarea pesada con Isolate
+- Isolate.spawn
+- SnackBar
+- mounted
 
 ## Clonar el Repositorio
-- git clone https://github.com/SergioAlarcon09/Talleres_Flutter/tree/Taller_Ciclo_De_Vida.git
+- git clone https://github.com/SergioAlarcon09/Talleres_Flutter/tree/Taller_SegundoPlano.git
 
 ## Instalar dependencias
 - flutter pub get
