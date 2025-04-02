@@ -48,7 +48,7 @@ class CustomDrawer extends StatelessWidget {
               //Permite volver atrás con context.pop().
               //Ideal para flujos donde el usuario puede regresar, como navegar a una pantalla de detalles.
               context.push(
-                '/settings',  //*Al pulsarlo manda a la pestaña de configuración
+                '/settings', //*Al pulsarlo manda a la pestaña de configuración
               ); // Navega a la pantalla de configuración
               Navigator.pop(context); // Cierra el drawer
             },
@@ -85,6 +85,15 @@ class CustomDrawer extends StatelessWidget {
             title: const Text('Tarea pesada (Isolate)'),
             onTap: () {
               context.goNamed('isolate');
+            },
+          ),
+          //! Comidas
+          ListTile(
+            leading: const Icon(Icons.restaurant),
+            title: const Text('Recetas'),
+            onTap: () {
+              context.goNamed('meals');
+              Navigator.pop(context);
             },
           ),
         ],
