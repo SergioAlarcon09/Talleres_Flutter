@@ -1,31 +1,45 @@
-# Taller: Future, Timer e Isolate
+# Taller: Consumo de API pública con Flutter
 
 Aplicación Flutter que demuestra:
-Implementación de operaciones asincrónicas en Flutter
+Cómo consumir una API pública (The Meal DB) para mostrar recetas de cocina,
+implementando navegación entre pantallas y manejo de estado.
 
 ## Funcionalidades
-- Carga de datos con Future (simulación de API)
-- Contador con Timer (inicio, pausa y reinicio)
-- Procesamiento en segundo plano con Isolate (tarea pesada sin bloquear la UI)
+### Consumo de API REST
+- Listado de recetas obtenidas de The Meal DB API
+- Detalle completo de cada receta
+
+### Navegación entre pantallas
+- Listado a detalle usando go_router
+
+### Manejo de estado
+- Carga de datos con FutureBuilder
+- Manejo de errores
+
+### Variables de entorno
+- Configuración de URLs de API usando .env
 
 ## Widgets utilizados
-### Lista de estudiantes:
+### Listado de recetas
 - FutureBuilder
 - CircularProgressIndicator
 - ListView.builder
+- Card
 
-### Contador con Timer
-- Timer.periodic
-- ElevatedButton
-- Text
+### Detalle de receta
+- SingleChildScrollView
+- Chip
+- Image.network
 
-### Tarea pesada con Isolate
-- Isolate.spawn
-- SnackBar
-- mounted
+### Navegación
+- go_router
+- Paso de parámetros
+
+### Archivo .env (Crear en raíz del proyecto)
+- MEAL_API_URL=https://www.themealdb.com/api/json/v1/1/
 
 ## Clonar el Repositorio
-- git clone https://github.com/SergioAlarcon09/Talleres_Flutter/tree/Taller_SegundoPlano.git
+- git clone https://github.com/SergioAlarcon09/Talleres_Flutter/tree/Taller_Consumo_API.git
 
 ## Instalar dependencias
 - flutter pub get
